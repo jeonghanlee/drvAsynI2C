@@ -28,8 +28,9 @@ TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
 #STREAM_WORKAROUND = 1
 
 # EPICS_BASE usually appears last so other apps can override stuff:
-EPICS_BASE = /etc/epics/base
-ASYN       = /etc/epics/asyn
+EPICS_BASE=${EPICS_PATH}/base
+ASYN=${EPICS_SYNAPPS}/asyn-4-26
+#STREAM=${EPICS_SYNAPPS}/stream-2-6a
 
 # Set RULES here if you want to take build rules from somewhere
 # other than EPICS_BASE:
